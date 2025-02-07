@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <title>Inkthirsty on e-z.host</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:player" content="" id="video-url-meta">
+    <meta name="theme-color" content="#42a1b2" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="">
+    <link type="application/json+oembed" href="https://i.e-z.host/4k6xh7e1.mp4.json" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="pubdate" content="2025-02-07 13:03:20.280 UTC">
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <script>
+        // Define the video URL variable
+        const videoUrl = "https://www.dropbox.com/scl/fi/ctrf2cvweddtj3cc29744/anvil.mp4?rlkey=n346vaez5i091ot8wflf04seq&raw=1";
+        
+        // Set the video source dynamically
+        window.onload = function() {
+            const videoElement = document.querySelector("video source");
+            if (videoElement) {
+                videoElement.src = videoUrl;  // Set the video source
+            }
+            
+            // Update the "View Raw" link
+            const viewRawLink = document.querySelector('a[href="https://a103avoddashs3ww-a.akamaihd.net/d/2$-rmYm-cFzfZTF6SLBzvTzkOB3xs/ondemand/iad_2/1ac9/d7c5/a6df/44b4-a8c9-262968288735/45dc416f-bc73-46fc-98de-fde6093cc336_corrected.mpd?encoding=segmentBase"]');
+            if (viewRawLink) {
+                viewRawLink.href = videoUrl;  // Update the link
+            }
+
+            // Update Twitter meta tag for video URL
+            const twitterPlayerMeta = document.getElementById("video-url-meta");
+            if (twitterPlayerMeta) {
+                twitterPlayerMeta.content = videoUrl;  // Update the Twitter meta tag
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Video Player</h1>
+        <video controls autoplay>
+            <source src="" />  <!-- Video source updated dynamically -->
+            Your browser does not support watching videos.
+        </video>
+    </div>
+
+    <div>
+        <a href="" id="view-raw-link">View Raw</a>
+    </div>
+</body>
+
+</html>
